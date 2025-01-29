@@ -1,0 +1,370 @@
+@media (max-width: 1400px) {
+    .right-side .header-bottom .main-nav a {
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .nav-container .nav-button {
+        width: 190px;
+        font-size: 14px;
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content .left-side {
+        display: none;
+    }
+
+    .content .right-side {
+        margin: 15px;
+    }
+
+    .content .right-side .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right-side .header-bottom {
+        justify-content: center;
+    }
+
+    .slider {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .nav-container {
+        right: 50%;
+        transform: translateX(50%);
+        margin: 0;
+    }
+
+    .content .right-side .logo-container {
+        justify-content: center;
+    }
+
+    .content .right-side .header-top #logo-img {
+        height: 3.5rem;
+    }
+
+    .right-side .header-bottom .main-nav {
+        gap: 15px;
+    }
+
+    .content .right-side .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .modal {
+        top: 58%;
+        left: 42%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .main-node {
+        width: 135px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 190px;
+        right: -190px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .main-node {
+        width: 110px;
+        font-size: 11px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 165px;
+        right: -165px;
+    }
+}
+
+@media (max-width: 1035px) {
+    .nav-container .nav-button {
+        width: 150px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .nav-container {
+        gap: 5px;
+        margin: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 875px) {
+    .main-node {
+        width: 95px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 150px;
+        right: -150px;
+    }
+
+    .branch.fourth-side-line::before {}
+}
+
+@media (max-width: 800px) {
+    .slider {
+        width: 610px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .right-side {
+        padding: 0 10px;
+    }
+
+    .content .right-side .header-top {
+        margin: 20px 0;
+    }
+
+    .content .right-side .search {
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .right-side .search .btn .search-input {
+        width: 100%;
+    }
+
+    .search .home-btn {
+        justify-content: center;
+    }
+
+    .right-side .header-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-side .header-bottom .main-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: calc(50% - 10px);
+    }
+
+    .right-side .header-bottom .lang-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .lang-box .lang {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .nav-container {
+        bottom: -20px;
+        padding: 20px;
+    }
+
+    .slider {
+        top: 330px;
+    }
+
+    .right-side .lang-box.top-btn {
+        display: flex;
+    }
+
+    .right-side .lang-box:not(.top-btn) {
+        display: none;
+    }
+
+    .modal {
+        top: 63%;
+    }
+
+    .main-node {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 135px;
+        right: -135px;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal {
+        width: 100%;
+        height: 531px;
+        top: 56%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 655px) {
+    .slider {
+        width: 550px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .right-side .header-top #logo-img {
+        height: 3rem;
+    }
+
+    .content .right-side .logo-container img:first-of-type {
+        margin-left: 10px;
+    }
+
+    .right-side .header-bottom .main-nav {
+        gap: 10px;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .slider {
+        width: 450px;
+        height: 320px;
+        top: 450px;
+    }
+
+    .nav-container {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 530px) {
+    .slider {
+        width: 370px;
+        height: 270px;
+        top: 450px;
+    }
+
+    .nav-container .nav-button {
+        width: 145px;
+    }
+
+    .modal {
+        width: 100%;
+        height: 531px;
+        top: 62%;
+        left: 50%;
+    }
+
+    .main-node {
+        width: 70px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 125px;
+        right: -125px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tree {
+        gap: 14px;
+    }
+
+    .main-node {
+        width: 55px;
+        height: 55px;
+    }
+
+    .branch.second-side-line::before {
+        right: -11px;
+        top: 30px;
+        height: 33%;
+    }
+
+    .branch.last-branch::before {
+        top: 27px;
+        right: -11px;
+        height: 50.4%;
+    }
+
+    .branch.down-branch {
+        top: 130px;
+    }
+
+    .branch.second-side-line .main-node {
+        margin-bottom: 75px;
+    }
+
+    .branch .main-node.withLine::before {
+        left: -19px;
+        width: 17px;
+    }
+
+    .branch.fourth-side-line::before {
+        top: 30px;
+        right: -11px;
+    }
+
+    .branch.last-branch .main-node:first-child:after {
+        width: 85px;
+        right: -85px;
+    }
+
+    .branch.therd-side-line .main-node.small-branch::after {
+        width: 2px;
+        right: -14px;
+        height: 66px;
+    }
+
+    .branch.therd-side-line::before {
+        top: 30px;
+        right: -11px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider {
+        width: 320px;
+        height: 240px;
+        top: 460px;
+    }
+}
+
+@media (max-width: 380px) {
+    .right-side .header {
+        width: 300px;
+    }
+
+    .slider {
+        width: 340px;
+        height: 250px;
+        top: 450px;
+    }
+
+    .discription {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .dostContainer .dot {
+        width: 17px;
+        height: 17px;
+    }
+}

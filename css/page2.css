@@ -1,0 +1,555 @@
+/* #region Reset and base styles*/
+
+
+/* #endregion */
+
+.backhome {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.backhome button {
+  margin-bottom: 1rem;
+  position: relative;
+  gap: 20px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #83cde7, #249dd1);
+  height: 3rem;
+  width: 13rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.backhome button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4ba6a9, #138fc1);
+
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+.backhome button:hover::before {
+  opacity: 1;
+}
+
+.backhome button a {
+  font-size: xx-large;
+  font-weight: 400;
+  color: white;
+  z-index: 1;
+}
+
+.backhome button:hover {
+  transform: scale(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db;
+  --hover-color: #2980b9;
+  --bg-color: #f0f7ff;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --sidebar-width: 300px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  background-color: var(--bg-color);
+  direction: rtl;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  right: var(--sidebar-width);
+  top: 50%;
+  z-index: 1001;
+  background: #d44638;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+}
+
+.sidebar-toggle:hover {
+  background: #d44638;
+}
+
+.sidebar-hidden .sidebar-toggle {
+  right: 20px;
+}
+
+.sidebar-toggle i {
+  transition: var(--transition);
+}
+
+.sidebar-hidden .sidebar-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 300px;
+  background: rgb(255 255 255 / 41%);
+  box-shadow: var(--box-shadow);
+  height: 450px;
+  position: fixed;
+  right: -288px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  border-radius: 20px 0 0 20px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
+}
+
+.sidebar:hover {
+  right: 0;
+}
+
+.sidebar-hidden .sidebar {
+  transform: translateX(var(--sidebar-width));
+}
+
+.sidebar-content {
+  padding: 1rem;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.sidebar-item:hover {
+  background-color: var(--hover-color);
+  transform: translateX(-5px);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  margin-right: var(--sidebar-width);
+  padding: 2rem;
+  overflow-x: auto;
+  transition: margin-right 0.3s ease-in-out;
+}
+
+.sidebar-hidden .main-content {
+  margin-right: 0;
+}
+
+/* Rest of your existing styles... */
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-width: fit-content;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/* here is meee */
+
+.box {
+  cursor: pointer;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.border-lines1 {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #e98f2e;
+  border-bottom: none;
+  border-radius: 1rem;
+  z-index: 1;
+  /* gap: 1.5rem; */
+}
+
+.border-lines1 .vertical_line {
+  height: 4rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.vertical_line {
+  height: 4rem;
+  width: 3px;
+  background-color: #e98f2e;
+}
+
+.m_vertical_lines {
+  display: flex;
+  gap: 9.5rem;
+}
+
+.m_vertical_line1 {
+  /* position: absolute;
+  margin-bottom: 2rem;
+  margin-left: 4rem; */
+  height: 6rem;
+  width: 3px;
+  background-color: #e98f2e;
+  transform: rotate(60deg);
+
+  margin-top: -1.5rem;
+}
+
+.m_vertical_line3 {
+  /* position: absolute;
+  margin-bottom: 2rem;
+  margin-left: 4rem; */
+  height: 6rem;
+  width: 3px;
+  background-color: #e98f2e;
+  transform: rotate(-60deg);
+
+  margin-top: -1.5rem;
+}
+
+.horizontal_line {
+  height: 1rem;
+  width: 100%;
+  background-color: #138fc1;
+  border-radius: 2rem;
+  margin: 1rem 0;
+}
+
+.level-2 {
+  margin-top: -2rem;
+}
+
+/* .level-3 {
+  margin-top: 2rem;
+} */
+
+.level3-box1 {
+  margin-right: -6rem;
+}
+
+.level3-box3 {
+  margin-left: -6rem;
+}
+
+.border-lines2 {
+  border: 3px solid #e98f2e;
+  border-bottom: none;
+  border-radius: 1rem;
+  /* gap: 1.5rem; */
+  margin-bottom: 2rem;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.level-4 {
+  margin-top: -2rem;
+}
+
+.level5-box1 {
+  margin-right: -6rem;
+}
+
+.level5-box3 {
+  margin-left: -6rem;
+}
+
+.level-6 {
+  margin-bottom: 2rem;
+}
+
+.bottom-box {
+  background: linear-gradient(to right, #6cc4fe, #4799e6) !important;
+}
+
+/* .level::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  height: 8rem;
+  width: 2px;
+  background-color: #e98f2e;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+} */
+
+/* .level:first-child::before {
+  display: none;
+} */
+
+.box {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.box:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+/* Level-specific styles */
+/* .level-3,
+.level-5 {
+  width: 100%;
+  justify-content: space-around;
+} */
+
+/* .level-6 {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+} */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  :root {
+    --sidebar-width: 250px;
+  }
+
+  .box {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 992px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+
+  .box {
+    font-size: 0.85rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+@media (max-width: 995px) {
+  .org-chart {
+    top: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .level-6 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 730px) {
+  .box {
+    width: 150px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+
+  /* :root {
+    --sidebar-width: 250px;
+  }
+
+  .sidebar-toggle {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+
+  .box {
+    min-width: 200px;
+  }
+
+  .level-3,
+  .level-5,
+  .level-6 {
+    flex-direction: column;
+  }
+
+  .vertical_line {
+    background-color: transparent;
+  }
+
+  .m_vertical_line1,
+  .m_vertical_line3 {
+    background-color: transparent;
+  }
+
+  .border-lines1,
+  .border-lines2 {
+    border: none;
+  }
+
+  .level3-box3,
+  .level3-box1,
+  .level5-box3,
+  .level5-box1 {
+    margin: 0;
+  } */
+
+}
+
+@media (max-width: 550px) {
+  .box {
+    width: 125px;
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-item {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+
+  .sidebar,
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box {
+    break-inside: avoid;
+    border: 1px solid #000;
+  }
+}
+
+@media (max-width: 477px) {
+  .org-chart { 
+    top: 400px;
+  }
+
+  .box {
+    width: 100px;
+    font-size: 10px;
+    padding: 6px;
+  }
+}
+
+
+.social-icons {
+  margin-top: 1rem;
+  position: absolute;
+  /* Position relative to the container */
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 13rem;
+  display: grid;
+
+
+  /* Space between icons */
+  z-index: 1;
+  /* Bring to front */
+}
+
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  /* كانت 1 / 5 / 2 / 6 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 {
+  grid-area: 2 / 2 / 3 / 3;
+  /* كانت 2 / 4 / 3 / 5 */
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.div3 {
+  grid-area: 3 / 3 / 4 / 4;
+  /* كانت 3 / 3 / 4 / 4 */
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.div4 {
+  grid-area: 4 / 4 / 5 / 5;
+  /* كانت 4 / 2 / 5 / 3 */
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.div5 {
+  grid-area: 5 / 5 / 6 / 6;
+  /* كانت 5 / 1 / 6 / 2 */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Style for icons */
+.social-icons a {
+  text-decoration: none;
+  font-size: 24px;
+  /* Icon size */
+}
+

@@ -1,0 +1,137 @@
+@media (max-width: 1400px) {
+    .right-side .header-bottom .main-nav a {
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .nav-container .nav-button {
+        width: 190px;
+        font-size: 14px;
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content .left-side {
+        display: none;
+    }
+
+    .content .right-side {
+        margin: 15px;
+    }
+
+    .content .right-side .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right-side .header-bottom {
+        justify-content: center;
+    }
+
+    .content .right-side .logo-container {
+        justify-content: center;
+    }
+
+    .content .right-side .header-top #logo-img {
+        height: 3.5rem;
+    }
+
+    .right-side .header-bottom .main-nav {
+        gap: 15px;
+    }
+
+    .content .right-side .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .right-side {
+        padding: 0 10px;
+    }
+
+    .content .right-side .header-top {
+        margin: 20px 0;
+    }
+
+    .content .right-side .search {
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .right-side .search .btn .search-input {
+        width: 100%;
+    }
+
+    .search .home-btn {
+        justify-content: center;
+    }
+
+    .right-side .header-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-side .header-bottom .main-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: calc(50% - 10px);
+    }
+
+    .right-side .header-bottom .lang-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side .header-bottom .lang-box .lang {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .right-side .lang-box.top-btn {
+        display: flex;
+    }
+
+    .right-side .lang-box:not(.top-btn) {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .right-side .header-top #logo-img {
+        height: 3rem;
+    }
+
+    .content .right-side .logo-container img:first-of-type {
+        margin-left: 10px;
+    }
+
+    .right-side .header-bottom .main-nav {
+        gap: 10px;
+    }
+
+    .right-side .header-bottom .main-nav a {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .right-side .header {
+        width: 300px;
+    }
+}
