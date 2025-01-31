@@ -1,8 +1,8 @@
 /* Slider container */
 .slider {
     position: absolute;
-    width: 750px;
-    height: 500px;
+    width: 800px;
+    height: 530px;
     right: 30px;
     top: 250px;
 }

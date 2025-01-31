@@ -1,7 +1,12 @@
-@media (max-width: 1400px) {
-    .right-side .header-bottom .main-nav a {
-        width: 140px;
-        font-size: 12px;
+@media (min-width: 1280px) {
+    .right-side .header-bottom .main-nav {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .right-side .header-bottom .nav-link {
+        width: 22%;
     }
 }
 

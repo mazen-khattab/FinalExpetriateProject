@@ -67,6 +67,10 @@ a {
   position: absolute;
 }
 
+.content .left-side .left-img {
+  width: 510px;
+}
+
 /* #endregion */
 
 /* #region right side*/
