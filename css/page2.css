@@ -10,6 +10,7 @@
 }
 
 .backhome button {
+  padding: 10px 15px;
   margin-bottom: 1rem;
   position: relative;
   gap: 20px;

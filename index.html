@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./css/homeStyle.css">
   <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/homeSlider.css">
@@ -17,7 +18,9 @@
 
 <body>
   <div class="content fade-in">
+    <!-- #region the left photo with social icons-->
     <div class="left-side">
+      <!-- first photo -->
       <div class="upper-photo">
         <img src="./images/upper-photo.png" alt="" />
       </div>
@@ -31,17 +34,13 @@
           <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
         </div>
         <div class="div3">
-          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+              style="color: #ff0000;"></i></a>
         </div>
         <div class="div4">
           <a href="#" target="_blank"><i class="fa-solid fa-envelope" style="color: #ea4335;"></i></a>
         </div>
         <div class="div5">
-          <!-- <i style="background-color: green;color: white; width: 40px;
-                                            height: 40px;
-                                            display: flex;justify-content: center;align-items: center;border-radius: 50px;"
-                                              class="fa-solid fa-phone"></i> -->
-
           <div
             style="width: 27px; height: 27px; background-color: #25D366; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
             <a style="display: flex; justify-content: center;" href="#" target="_blank"><i class="fas fa-phone"
@@ -50,19 +49,28 @@
         </div>
       </div>
 
+      <!-- second photo -->
       <div class="bottom-photo">
         <img src="./images/bottom-photo.png" alt="" />
       </div>
     </div>
+    <!-- #endregion -->
 
+    <!-- the content of the page -->
     <div class="right-side">
       <header class="header">
         <div class="header-top">
+          <!-- logos of the page -->
           <div class="logo-container">
-            <img id="logo-img" src="./images/uni_ar.png" alt="" />
-            <img id="logo-img" src="./images/image.png" alt="" />
+            <a href="https://www.menofia.edu.eg/Home/ar" target="_blank">
+              <img id="logo-img" src="./images/uni_ar.png" alt="" />
+            </a>
+            <a href="#">
+              <img id="logo-img" src="./images/image.png" alt="" />
+            </a>
           </div>
 
+          <!-- search btn with home btn -->
           <div class="search">
             <div class="search-box">
               <button class="btn">
@@ -72,10 +80,10 @@
               </button>
             </div>
 
-            <div class="home-btn">
+            <a href="./index.html" class="home-btn">
               <i class="fa-solid fa-house"></i>
-              <a href="#"><span>الرئيسية</span></a>
-            </div>
+              <span>الرئيسية</span>
+            </a>
 
             <div class="lang-box top-btn">
               <span class="arrow"></span>
@@ -91,6 +99,7 @@
 
         <div class="line"></div>
 
+        <!-- nav bar links -->
         <div class="header-bottom">
           <div class="side-navbar">
             <i class="fa-solid fa-xmark cansel-mark"></i>
@@ -150,6 +159,7 @@
       </header>
     </div>
 
+    <!-- university collage popup -->
     <div id="modal" class="modal notAppear">
       <div class="overlay"></div>
       <div class="modal-content">
@@ -157,30 +167,56 @@
           <div class="tree">
             <!-- Programs Branch -->
             <div class="branch side-line">
-              <a href="https://www.menofia.edu.eg/MED/Home/en" target="_blank" class="main-node withLine">كلية الطب</a>
-              <a href="https://www.menofia.edu.eg/ART/Home/en" target="_blank" class="main-node">كلية الآداب</a>
-              <a href="https://www.menofia.edu.eg/ENG/Home/en" target="_blank" class="main-node">كلية الهندسة</a>
-              <a href="https://www.menofia.edu.eg/COM/Home/en" target="_blank" class="main-node">كلية التجارة</a>
-              <a href="https://www.menofia.edu.eg/SCI/Home/en" target="_blank" class="main-node">كلية العلوم</a>
-              <a href="https://www.menofia.edu.eg/LAW/Home/en" target="_blank" class="main-node">كلية الحقوق</a>
+              <a
+                href="https://www.menofia.edu.eg/MED/Home/en"
+                target="_blank"
+                class="main-node withLine"
+                >كلية الطب</a
+              >
+              <a
+                href="https://www.menofia.edu.eg/ART/Home/en"
+                target="_blank"
+                class="main-node"
+                >كلية الآداب</a
+              >
+              <a
+                href="https://www.menofia.edu.eg/ENG/Home/en"
+                target="_blank"
+                class="main-node"
+                >كلية الهندسة</a
+              >
+              <a
+                href="https://www.menofia.edu.eg/COM/Home/en"
+                target="_blank"
+                class="main-node"
+                >كلية التجارة</a
+              >
+              <a
+                href="https://www.menofia.edu.eg/SCI/Home/en"
+                target="_blank"
+                class="main-node"
+                >كلية العلوم</a
+              >
+              <a
+                href="https://www.menofia.edu.eg/LAW/Home/en"
+                target="_blank"
+                class="main-node"
+                >كلية الحقوق</a
+              >
             </div>
 
             <!-- Stages Branch -->
             <div class="branch second-side-line">
-              <div class="main-node withLine">مراحل الجامعة</div>
-              <div class="main-node withLine">مراحل الجامعة</div>
-              <!-- <div class="sub-branches">
-                  <div class="node">Undergraduate Studies</div>
-                  <div class="node">Postgraduate Studies</div>
-                </div> -->
+              <div class="main-node withLine">المرحلة الجامعة</div>
+              <div class="main-node withLine">الدراسات العليا</div>
             </div>
 
             <!-- Faculties Branch -->
             <div class="branch therd-side-line">
-              <div class="main-node">الكليات</div>
-              <div class="main-node">الكليات</div>
-              <div class="main-node small-branch withLine">الكليات</div>
-              <div class="main-node">الكليات</div>
+              <div class="main-node">برامج عامة</div>
+              <div class="main-node">برنامج تكاملي</div>
+              <div class="main-node small-branch withLine">الماجستير</div>
+              <div class="main-node">الدكتوراه</div>
             </div>
 
             <div class="branch down-branch fourth-side-line">
@@ -203,6 +239,7 @@
       </div>
     </div>
 
+    <!-- slider of the home page, photo change every 6s -->
     <div class="slider">
       <div class="slides">
         <img src="./images/main-image1.png" class="slide active"></img>
@@ -223,6 +260,7 @@
       </div>
     </div>
 
+    <!-- buttons that link all pages with home page -->
     <div class="nav-container">
       <a href="page2.html" class="nav-button">مكتب الوافدين</a>
       <a href="./servicesprovidedtoexpatriates.html" class="nav-button">الخدمات المقدمه للوافدين</a>

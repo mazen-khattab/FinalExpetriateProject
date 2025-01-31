@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>جامعة المنوفية</title>
+    <title>Menoufia University</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    
+
     <link rel="stylesheet" href="css/page2.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/homeStyle.css" />
@@ -23,10 +23,13 @@
 
   <body>
     <div class="content fade-in">
+      <!-- #region the left photo with social icons-->
       <div class="left-side">
+        <!-- first photo -->
         <div class="upper-photo">
           <img src="./images/upper-photo.png" alt="" />
         </div>
+
         <div class="social-icons">
           <div class="div1">
             <a href="https://www.facebook.com/" target="_blank"
@@ -78,33 +81,45 @@
           </div>
         </div>
       </div>
+      <!-- #endregion -->
 
+      <!-- the content of the page -->
       <div class="right-side">
         <header class="header">
           <div class="header-top">
+            <!-- logos of the page -->            
             <div class="logo-container">
-              <img id="logo-img" src="./images/uni_ar.png" alt="" />
-              <img id="logo-img" src="./images/image.png" alt="" />
+              <a href="https://www.menofia.edu.eg/Home/ar" target="_blank">
+                <img id="logo-img" src="./images/uni_ar.png" alt="" />
+              </a>
+              <a href="#">
+                <img id="logo-img" src="./images/image.png" alt="" />
+              </a>
             </div>
-  
+
+            <!-- search btn with home btn -->
             <div class="search">
               <div class="search-box">
                 <button class="btn">
                   <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                  <input type="search" class="search-input" placeholder="Search" />
+                  <input
+                    type="search"
+                    class="search-input"
+                    placeholder="Search"
+                  />
                   <i class="fa-solid fa-circle-xmark close"></i>
                 </button>
               </div>
-  
-              <div class="home-btn">
+
+              <a href="./index.html" class="home-btn">
                 <i class="fa-solid fa-house"></i>
-                <a href="indexEN.html"><span>Home</span></a>
-              </div>
-  
+                <span>Home</span>
+              </a>
+
               <div class="lang-box top-btn">
                 <span class="arrow"></span>
                 <span>EN</span>
-  
+
                 <div class="lang">
                   <a value="AR" href="page2.html">Arabic</a>
                   <a value="EN" href="#">English</a>
@@ -112,9 +127,10 @@
               </div>
             </div>
           </div>
-  
+
           <div class="line"></div>
-  
+
+          <!-- nav bar links -->
           <div class="header-bottom">
             <nav class="main-nav">
               <a href="#" class="nav-link">
@@ -134,15 +150,11 @@
                 <span>Contact us</span>
               </a>
             </nav>
-  
-            <div class="menu-bar">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-  
+
             <div class="lang-box">
               <span class="arrow"></span>
               <span>EN</span>
-  
+
               <div class="lang">
                 <a value="AR" href="page2.html">Arabic</a>
                 <a value="EN" href="#">English</a>
@@ -152,9 +164,91 @@
         </header>
       </div>
 
+      <!-- university collage popup -->
+      <div id="modal" class="modal notAppear">
+        <div class="overlay"></div>
+        <div class="modal-content">
+          <div class="tree-container">
+            <div class="tree">
+              <!-- Programs Branch -->
+              <div class="branch side-line">
+                <a
+                  href="https://www.menofia.edu.eg/MED/Home/en"
+                  target="_blank"
+                  class="main-node withLine"
+                  >Faculty of Medicine</a
+                >
+                <a
+                  href="https://www.menofia.edu.eg/ART/Home/en"
+                  target="_blank"
+                  class="main-node"
+                  >Faculty of Arts</a
+                >
+                <a
+                  href="https://www.menofia.edu.eg/ENG/Home/en"
+                  target="_blank"
+                  class="main-node"
+                  >Faculty of Engineering</a
+                >
+                <a
+                  href="https://www.menofia.edu.eg/COM/Home/en"
+                  target="_blank"
+                  class="main-node"
+                  >Faculty of Commerce</a
+                >
+                <a
+                  href="https://www.menofia.edu.eg/SCI/Home/en"
+                  target="_blank"
+                  class="main-node"
+                  >Faculty of Science</a
+                >
+                <a
+                  href="https://www.menofia.edu.eg/LAW/Home/en"
+                  target="_blank"
+                  class="main-node"
+                  >Faculty of Law</a
+                >
+              </div>
+
+              <!-- Stages Branch -->
+              <div class="branch second-side-line">
+                <div class="main-node withLine">University stage</div>
+                <div class="main-node withLine">Postgraduate studies</div>
+              </div>
+
+              <!-- Faculties Branch -->
+              <div class="branch therd-side-line">
+                <div class="main-node">General Programs</div>
+                <div class="main-node">Integration program</div>
+                <div class="main-node small-branch withLine">Masters</div>
+                <div class="main-node">PhD</div>
+              </div>
+
+              <div class="branch down-branch fourth-side-line">
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+              </div>
+
+              <div class="branch last-branch">
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+                <div class="main-node">Faculties</div>
+              </div>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-circle-xmark close-btn"></i>
+        </div>
+      </div>
+
       <aside class="sidebar">
         <div class="sidebar-content">
-          <a href="#" class="sidebar-item">Speech of His Excellency the University President</a>
+          <a href="#" class="sidebar-item"
+            >Speech of His Excellency the University President</a
+          >
           <a href="#" class="sidebar-item"
             >Speech of the Vice President for Student Affairs</a
           >
@@ -189,7 +283,9 @@
           <!-- Level 3 -->
           <div class="level level-3">
             <div class="box level3-box1">Deputy Director of Internal Audit</div>
-            <div class="box level3-box2">Deputy Director for Special Reviews</div>
+            <div class="box level3-box2">
+              Deputy Director for Special Reviews
+            </div>
             <div class="box level3-box3">Deputy Director for Field Reviews</div>
           </div>
         </div>
@@ -233,64 +329,7 @@
         </div>
       </div>
 
-      <div id="modal" class="modal notAppear">
-        <div class="overlay"></div>
-        <div class="modal-content">
-            <div class="tree-container">
-                <div class="tree">
-                    <!-- Programs Branch -->
-                    <div class="branch side-line">
-                        <a href="https://www.menofia.edu.eg/MED/Home/en" target="_blank"
-                            class="main-node withLine">Faculty of Medicine</a>
-                        <a href="https://www.menofia.edu.eg/ART/Home/en" target="_blank" class="main-node">Faculty
-                            of Arts</a>
-                        <a href="https://www.menofia.edu.eg/ENG/Home/en" target="_blank" class="main-node">Faculty
-                            of Engineering</a>
-                        <a href="https://www.menofia.edu.eg/COM/Home/en" target="_blank" class="main-node">Faculty
-                            of Commerce</a>
-                        <a href="https://www.menofia.edu.eg/SCI/Home/en" target="_blank" class="main-node">Faculty
-                            of Science</a>
-                        <a href="https://www.menofia.edu.eg/LAW/Home/en" target="_blank" class="main-node">Faculty
-                            of Law</a>
-                    </div>
 
-                    <!-- Stages Branch -->
-                    <div class="branch second-side-line">
-                        <div class="main-node withLine">University Stages</div>
-                        <div class="main-node withLine">University Stages</div>
-                        <!-- <div class="sub-branches">
-                      <div class="node">Undergraduate Studies</div>
-                      <div class="node">Postgraduate Studies</div>
-                    </div> -->
-                    </div>
-
-                    <!-- Faculties Branch -->
-                    <div class="branch therd-side-line">
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node small-branch withLine">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                    </div>
-
-                    <div class="branch down-branch fourth-side-line">
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                    </div>
-
-                    <div class="branch last-branch">
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                        <div class="main-node">Faculties</div>
-                    </div>
-                </div>
-            </div>
-
-            <i class="fa-solid fa-circle-xmark close-btn"></i>
-        </div>
-    </div>
     </div>
 
     <script src="./javascript/script.js"></script>
