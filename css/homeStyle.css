@@ -339,16 +339,13 @@
     z-index: 10;
 }
 
-
 .nav-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-right: 30px;
     position: absolute;
-    bottom: 0px;
-    top: 50rem;
-    right: 0;
+    top: 53rem;
+    right: 30px;
 }
 
 .nav-container .nav-button {
