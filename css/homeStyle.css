@@ -386,3 +386,69 @@
 .nav-container .nav-button:hover::before {
     opacity: 1;
 }
+
+.social-icons {
+    margin-top: 1rem;
+    position: absolute;
+    /* Position relative to the container */
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 14rem;
+    display: grid;
+
+
+    /* Space between icons */
+    z-index: 1;
+    /* Bring to front */
+}
+
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    /* كانت 1 / 5 / 2 / 6 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    grid-area: 2 / 2 / 3 / 3;
+    /* كانت 2 / 4 / 3 / 5 */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.div3 {
+    grid-area: 3 / 3 / 4 / 4;
+    /* كانت 3 / 3 / 4 / 4 */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 4rem;
+}
+
+.div4 {
+    grid-area: 4 / 4 / 5 / 5;
+    /* كانت 4 / 2 / 5 / 3 */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 3rem;
+}
+
+.div5 {
+    grid-area: 5 / 5 / 6 / 6;
+    /* كانت 5 / 1 / 6 / 2 */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Style for icons */
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    /* Icon size */
+}
