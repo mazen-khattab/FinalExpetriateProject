@@ -444,7 +444,7 @@ a {
   top: 0;
   left: 0;
   width: 80%;
-  height: 13rem;
+  height: 14rem;
   display: grid;
 
 
@@ -476,6 +476,7 @@ a {
   display: flex;
   justify-content: start;
   align-items: end;
+  height: 4rem;
 }
 
 .div4 {
@@ -484,6 +485,7 @@ a {
   display: flex;
   justify-content: start;
   align-items: end;
+  height: 3rem;
 }
 
 .div5 {
@@ -500,6 +502,7 @@ a {
   font-size: 24px;
   /* Icon size */
 }
+
 /* #endregion */
 
 .modal .modal-content .close-btn {
