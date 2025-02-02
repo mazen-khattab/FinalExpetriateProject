@@ -1,4 +1,3 @@
-
 @media (max-width: 1240px) {
     .nav-container .nav-button {
         width: 190px;
@@ -132,7 +131,7 @@
     .right-side .header-bottom .main-nav a {
         width: 200px;
         height: 45px;
-        font-size: 14px;
+        font-size: 11px;
     }
 }
 
