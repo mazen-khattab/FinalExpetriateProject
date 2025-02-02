@@ -63,7 +63,7 @@
 
 .modal.notAppear {
     top: 49%;
-    z-index: -1;
+    z-index: -7;
     opacity: 0;
 }
 
